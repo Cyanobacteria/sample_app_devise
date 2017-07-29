@@ -11,6 +11,7 @@
       <th>Avatar content type</th>
       <th>Avatar file size</th>
       <th>Avatar updated at</th>
+      <th>image</th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -24,6 +25,7 @@
         <td><%= profile.avatar_content_type %></td>
         <td><%= profile.avatar_file_size %></td>
         <td><%= profile.avatar_updated_at %></td>
+        <td><%= image_tag profile.avatar.url(:thumb) %></td>
         <td><%= link_to 'Show', profile %></td>
         <td><%= link_to 'Edit', edit_profile_path(profile) %></td>
         <td><%= link_to 'Destroy', profile, method: :delete, data: { confirm: 'Are you sure?' } %></td>
