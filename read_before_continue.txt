@@ -1,0 +1,6 @@
+預備使用paperclip
+切換到branch paerclip
+已經安裝paperclip
+avater 安在profiles 資料表中（跟devise分開）
+
+新增一個controller view route 有在model Profile裡面放東西
