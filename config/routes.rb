@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  get '/t', to: 'paperclips#create'  
+  
   devise_for :users
   root 'static_pages#home'
   get  '/help',    to: 'static_pages#help'
