@@ -1,0 +1,23 @@
+
+<table>
+  <thead>
+    <tr>
+      <% @profile.column_names.each do |profile| %>  
+      <th><%= profile %>&nbsp&nbsp</th>
+      
+      <% end %>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @profile.each do |profile| %>
+      <tr>
+        <% @profile.column_names.each do |p| %>
+          <% # a="#{profile}.#{p}" %>
+          <td><%= profile.method(p).call %> </td>   
+        <% end %>
+      </tr>
+    <% end %>
+  </tbody>
+</table>

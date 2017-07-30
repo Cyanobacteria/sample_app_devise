@@ -4,3 +4,10 @@
 avater 安在profiles 資料表中（跟devise分開）
 
 新增一個controller view route 有在model Profile裡面放東西
+
+
+目前完成了papclip 跟 profiles table的整合
+
+Profile model user_id 有唯一性  profiles table還沒有加入唯一性（在資料庫內,記得加）
+
+
